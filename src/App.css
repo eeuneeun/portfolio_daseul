@@ -1,10 +1,31 @@
 h1 {
     color: black; /* 텍스트 색상 */
-    font-size: 2rem; /* 폰트 크기 */
     text-align: center; /* 텍스트 가운데 정렬 */
 }
 
-h3{
+h2{
+    text-align: center;
+}
+
+h4{
+    color: rgb(78, 141, 141);
+    text-align: center;
+}
+
+.hello{
     color :cadetblue;
     text-align: center;
+
+}
+
+h3{
+    color:cadetblue;
+}
+
+h5{
+    text-align: center;
+}
+
+#black-title{
+    color:black;
 }

@@ -1,22 +1,20 @@
-import react from '@vitejs/plugin-react'
-import { defineConfig } from 'vite'
-
-
-// https://vite.dev/config/
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import withReactRouter from "vite-plugin-next-react-router";
+import { fileURLToPath } from "url";
+ 
+// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
-  build: {
-    target: 'ES6'  // ES6에 해당
+  css : {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@use "src/sass/main.scss" as *;`
+      }
+    }
   },
-  esbuild: {
-    target: 'ES6'
-  }
-})
-
-// const { defineConfig } = require('vite');
-// // 혹은 import * as react from '@vitejs/plugin-react';
-// const react = require('@vitejs/plugin-react');
-
-// module.exports = defineConfig({
-//   plugins: [react()],
-// });
+  plugins: [react(), withReactRouter({
+    pageDir: "src/pages",
+    extensions: ["js", "jsx", "ts", "tsx"],
+    layout: "_layout",
+  }),],
+});

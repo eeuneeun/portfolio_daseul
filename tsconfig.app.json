@@ -8,6 +8,11 @@
     "skipLibCheck": true,
     "composite" : true,
 
+    /* js */
+    "allowJs": true,
+    "checkJs": false,
+
+
     /* Bundler mode */
     "moduleResolution": "node",
     "esModuleInterop": true,

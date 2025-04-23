@@ -1,11 +1,29 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
+import React from "react";
+import ReactDOM, { Root } from "react-dom/client";
+import App from "./App";
+import { BrowserRouter } from "react-router-dom";
 
-console.log("🔥 main.tsx 시작됨");
+// 전역 변수로 root를 선언
+let root: Root | null = null;
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-)
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.getElementById("root");
+
+  $(document).ready(function(){
+    console.log('ok')
+  })
+  if (container && !root) {
+    root = ReactDOM.createRoot(container);
+  }
+
+  if (root) {
+    root.render(
+      <React.StrictMode>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </React.StrictMode>
+    );
+  }
+});
+
