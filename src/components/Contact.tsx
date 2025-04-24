@@ -1,9 +1,10 @@
-import * as React from 'react';
+import MarkEmailUnreadIcon from "@mui/icons-material/MarkEmailUnread";
+import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
+import OtherHousesIcon from "@mui/icons-material/OtherHouses";
 
-export interface IContactProps {
-}
+export interface IContactProps {}
 
-export default function Contact (props: IContactProps) {
+export default function Contact(props: IContactProps) {
   return (
     <section id="contact">
       <div className="inner">
@@ -24,33 +25,35 @@ export default function Contact (props: IContactProps) {
               </div>
             </div>
             <ul className="actions">
-              <li><input type="submit" value="Send Message" className="primary" /></li>
-              <li><input type="reset" value="Clear" /></li>
+              <li>
+                <input type="submit" value="Send Message" className="primary" />
+              </li>
+              <li>
+                <input type="reset" value="Clear" />
+              </li>
             </ul>
           </form>
         </section>
         <section className="split">
           <section>
             <div className="contact-method">
-              <span className="icon solid alt fa-envelope"></span>
+              <MarkEmailUnreadIcon />
               <h3>Email</h3>
-              <a href="#">information@untitled.tld</a>
+              <a href="#">daseul@naver.com</a>
             </div>
           </section>
           <section>
             <div className="contact-method">
-              <span className="icon solid alt fa-phone"></span>
+              <PhoneAndroidIcon />
               <h3>Phone</h3>
-              <span>(000) 000-0000 x12387</span>
+              <span>010-0000-0000</span>
             </div>
           </section>
           <section>
             <div className="contact-method">
-              <span className="icon solid alt fa-home"></span>
+              <OtherHousesIcon />
               <h3>Address</h3>
-              <span>1234 Somewhere Road #5432<br />
-              Nashville, TN 00000<br />
-              United States of America</span>
+              <span>서울시 동작구 nn길 n층</span>
             </div>
           </section>
         </section>
