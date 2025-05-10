@@ -4,7 +4,7 @@ import OtherHousesIcon from "@mui/icons-material/OtherHouses";
 
 export interface IContactProps {}
 
-export default function Contact(props: IContactProps) {
+export default function Contact() {
   return (
     <section id="contact">
       <div className="inner">

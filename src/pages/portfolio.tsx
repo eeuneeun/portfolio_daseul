@@ -1,16 +1,12 @@
-import * as React from 'react';
-import Footer from '../components/Footer';
+import Footer from "../components/Footer";
 
-export interface IPortfolioProps {
-}
+export interface IPortfolioProps {}
 
-export default function Portfolio (props: IPortfolioProps) {
+export default function Portfolio() {
   return (
     <>
-    <div>
-      포트폴리오
-    </div>
-    <Footer />
+      <div>포트폴리오</div>
+      <Footer />
     </>
   );
 }
