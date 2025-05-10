@@ -45,7 +45,7 @@ const Main = () => {
           <section>
             <a href="generic.html" className="image">
               <img
-                src="images/pic08.jpg"
+                src="/portfolio_daseul/images/pic08.jpg"
                 alt=""
                 data-position="center center"
               />
@@ -74,7 +74,11 @@ const Main = () => {
           </section>
           <section>
             <a href="generic.html" className="image">
-              <img src="images/pic09.jpg" alt="" data-position="top center" />
+              <img
+                src="/portfolio_daseul/images/pic09.jpg"
+                alt=""
+                data-position="top center"
+              />
             </a>
             <div className="content">
               <div className="inner">
@@ -100,7 +104,11 @@ const Main = () => {
           </section>
           <section>
             <a href="generic.html" className="image">
-              <img src="images/pic10.jpg" alt="" data-position="25% 25%" />
+              <img
+                src="/portfolio_daseul/images/pic10.jpg"
+                alt=""
+                data-position="25% 25%"
+              />
             </a>
             <div className="content">
               <div className="inner">
