@@ -5,7 +5,7 @@ import withReactRouter from "vite-plugin-next-react-router";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/portfolio_daseul/",
+  base: "/portfolio_daseul",
   css: {
     preprocessorOptions: {
       scss: {
